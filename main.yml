@@ -5,7 +5,7 @@
   become_method: sudo
   tasks:
    - name: disk space utilization
-     command: df -h /
+     command: "df -h /"
      register: disk_space
    - debug:
       msg: "{{ disk_space.stdout }}"
