@@ -1,6 +1,6 @@
 ---
-- hosts: all
-  remote_user: root
+- hosts: webserver
+  remote_user: ravi
   become: yes
   become_method: sudo
   tasks:
