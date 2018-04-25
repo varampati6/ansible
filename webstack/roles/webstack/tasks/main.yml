@@ -12,8 +12,8 @@
   yum: 
    name: httpd
    state: present
-  ignore_errors: yes
-  when: httpd_state.stdout_lines | length > 0
+#  ignore_errors: yes
+#  when: httpd_state.stdout_lines | length > 0
 
 
 
