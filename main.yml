@@ -1,0 +1,12 @@
+---
+- hosts: 192.168.150.134
+  remote_user: ravi
+  become: yes
+  become_method: sudo
+  tasks:
+   - name: disk space utilization
+     command: df -h /
+     register: disk_space
+   - debug:
+      msg: "{{ disk_space.stdout }}"
+
