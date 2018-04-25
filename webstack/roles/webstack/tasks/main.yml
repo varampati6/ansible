@@ -1,0 +1,25 @@
+---
+
+- name: Checking webservice installed or not
+  command: " rpm -q httpd "
+  register: httpd_state
+
+- name: Httpd state
+  debug:
+  msg: " {{httpd_state }}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

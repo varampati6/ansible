@@ -1,0 +1,25 @@
+---
+- hosts: webgroup
+  become: yes
+  remote_user: ravi
+  become_method: sudo
+  tasks:
+  roles:
+   - webstack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
