@@ -8,6 +8,17 @@
   debug:
   msg: " {{httpd_state }}"
 
+- name: Installing httpd service  
+  yum: 
+   name: httpd
+   state: present
+  ignore_errors: yes
+  when: httpd_state.stdout_lines | length > 0
+
+
+
+
+
 
 
 
