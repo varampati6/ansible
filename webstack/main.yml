@@ -1,5 +1,5 @@
 ---
-- hosts: webgroup
+- hosts: webserver
   become: yes
   remote_user: ravi
   become_method: sudo
