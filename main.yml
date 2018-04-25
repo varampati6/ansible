@@ -8,5 +8,5 @@
      command: "df -h /"
      register: disk_space
    - debug:
-      msg: "{{ disk_space.stdout }}"
+     msg: "{{ disk_space.stdout }}"
 
