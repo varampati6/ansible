@@ -1,17 +1,11 @@
 [all]
 controlmachine
+appserver
 webserver
+
+[appgroup]
+appserver
 
 [webgroup]
 webserver
-
-
-
-
-
-
-
-
-
-
 

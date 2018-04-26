@@ -1,16 +1,17 @@
 ---
-- hosts: 192.168.150.139
-  become: yes
+- hosts: webserver
+  tasks:
+
+- name: Installing webservice in webgroup servers
+  hosts: webgroup
   remote_user: ravi
+  become: yes
   become_method: sudo
   tasks:
   roles:
-   - webstack
-
-
-
-
-
+   - web
+ 
+  
 
 
 
