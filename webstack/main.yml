@@ -3,7 +3,7 @@
   tasks:
 
 - name: Installing webservice in webgroup servers
-  hosts: webgroup
+  hosts: 192.168.150.139
   remote_user: ravi
   become: yes
   become_method: sudo
