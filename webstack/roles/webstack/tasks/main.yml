@@ -1,7 +1,9 @@
 ---
 
 - name: Checking webservice installed or not
-  command: rpm -q httpd 
+  service:
+   name: httpd
+   state: status
   register: httpd_state
 
 - name: Httpd state
