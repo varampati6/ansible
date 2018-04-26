@@ -1,0 +1,27 @@
+---
+# tasks file for web
+- name: Installing httpd
+  yum:
+   name: "{{item}}"
+   state: present
+  with_items:
+   - httpd
+   - httpd-tools 
+  tags: install
+
+- name: Copying Index.html file to webserver
+  copy:
+   src: index.html
+   dest: /var/www/html/index.html
+  tags: copy
+  notify: restart httpd
+
+- name: removing httpd service
+  yum:
+   name: httpd
+   state: absent
+  tags: uninstall
+
+
+
+

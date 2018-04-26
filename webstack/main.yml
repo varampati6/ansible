@@ -1,0 +1,26 @@
+---
+- hosts: webserver
+  tasks:
+
+- name: Installing webservice in webgroup servers
+  hosts: webgroup
+  remote_user: ravi
+  become: yes
+  become_method: sudo
+  tasks:
+  roles:
+   - web
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
