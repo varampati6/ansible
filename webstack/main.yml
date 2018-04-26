@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: 192.168.150.139
   tasks:
 
 - name: Installing webservice in webgroup servers
