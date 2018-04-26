@@ -3,7 +3,7 @@
 - name: Checking webservice installed or not
   service: 
    name: httpd
-   state: status
+   got: status
   register: httpd_state
 
 - name: Httpd state
