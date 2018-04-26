@@ -16,11 +16,7 @@
   tags: copy
   notify: restart httpd
 
-- name: removing httpd service
-  yum:
-   name: httpd
-   state: absent
-  tags: uninstall
+
 
 
 
